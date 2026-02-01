@@ -7,7 +7,7 @@ class Lesson(models.Model):
     title = models.CharField(max_length=200)
     video_url = models.URLField(blank=True, null=True)
     content = models.TextField(blank=True)
-    order = models.PositiveIntegerField
+    order = models.PositiveIntegerField()
 
     class Meta:
         ordering = ['order']

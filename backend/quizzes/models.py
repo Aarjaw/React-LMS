@@ -26,6 +26,5 @@ class Choice(models.Model):
 class QuizAttempt(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     quiz = models.ForeignKey(Quiz, on_delete=models.CASCADE)
-    score = models.ImageField()
+    score = models.IntegerField()
     attempt_at = models.DateTimeField(auto_now_add=True)
-    

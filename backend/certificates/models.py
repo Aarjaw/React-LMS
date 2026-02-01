@@ -4,7 +4,7 @@ from courses.models import Course
 
 # Create your models here.
 
-class certificate(models.Model):
+class Certificate(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
     issued_at = models.DateTimeField(auto_now_add=True)
